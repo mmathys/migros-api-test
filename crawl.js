@@ -9,6 +9,7 @@ var count = 0;
 var ddosSafe = 1000;
 var last = "";
 
+
 function next(error, response, body) {
     if (error) console.log('error:', error); // Print the error if one occurred
     if (error) done = true;
@@ -21,13 +22,29 @@ function next(error, response, body) {
 
         for (var i = 0; i < body.length; i++) {
             if (body[i].name !== last) {
-                var categories = "in ";
+                var cat = false;
                 for (var j = 0; j < body[i].categories.length; j++) {
-                    if (j !== 0) categories += ", "
-                    categories += body[i].categories[j].name;
+                    var c = body[i].categories[j].name.toLowerCase();
+                    if (c.match(/brotaufstrich/)) {
+                        cat = "Brotaufstrich";
+                    } else if (c.match(/brot/)) {
+                        cat = "Brotwaren";
+                    } else if (c.match(/milch|eier/)) {
+                        cat = "Milchprodukte&Eier";
+                    } else if (c.match(/fleisch|fisch/)) {
+                        cat = "Fleisch&Fisch";
+                    } else if (c.match(/müesli|muesli|cerealien/)) {
+                        cat = "Müesli&Cerealien";
+                    } else if (c.match(/getränke/)) {
+                        cat = "Getränke";
+                    }
                 }
-                console.log("Fr.", body[i].price_info.price, body[i].name, categories);
-                last = body[i].name;
+                if (cat) {
+                    var price = body[i].price_info.price;
+                    price = price.replace("–", "00");
+                    console.log(price, "'" + body[i].name + "'", cat);
+                    last = body[i].name;
+                }
             }
         }
     }

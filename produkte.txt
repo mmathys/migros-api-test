@@ -1,0 +1,30 @@
+3.15 '6 oeufs sol 53g+' Milchprodukte&Eier
+1.20 '7up' Getränke
+1.20 '7up free' Getränke
+1.20 '7up free Grapefruit' Getränke
+1.20 '7up Grapefruit' Getränke
+1.90 '7Up H2 Oh! Zitrone' Getränke
+4.20 'Aargauer Eier Bodenhaltung 53+' Milchprodukte&Eier
+23.00 'Aargauer Traum' Milchprodukte&Eier
+1.85 'Actilife Breakfast' Getränke
+1.85 'Actilife Bun Di' Getränke
+1.85 'Actilife Good Morning' Getränke
+1.85 'Actilife Omega 3' Getränke
+1.85 'Actilife Vital' Getränke
+3.30 'Actilife Weizenkeime' Müesli&Cerealien
+3.85 'Actilife Wellness Crisp' Müesli&Cerealien
+5.10 'Aha! Chicken Nuggets' Fleisch&Fisch
+3.60 'Aha! Farmer Crunchy Corn Flakes' Müesli&Cerealien
+4.60 'Aha! Farmer Soft Heidelbeer/Brombeer' Müesli&Cerealien
+5.50 'Aha! Fibre Cracker glutenfrei' Brotwaren
+22.50 'Ajoiekäse grün' Milchprodukte&Eier
+24.00 'Ajoje Hartkäse' Milchprodukte&Eier
+3.60 'Albo Anchois entiers' Fleisch&Fisch
+2.70 'Albo Makrelenfilets' Fleisch&Fisch
+8.60 'Albo MSC Thon blanc entier' Fleisch&Fisch
+3.50 'Albo MSC Thon naturel' Fleisch&Fisch
+3.05 'Albo MSC Weisser Thunfisch' Fleisch&Fisch
+2.65 'Albo Sardinas picantonas' Fleisch&Fisch
+3.50 'Albo Tintenfisch in eigener Tinte' Fleisch&Fisch
+28.50 'Aletsch grand cru' Milchprodukte&Eier
+25.00 'Aletschkäse' Milchprodukte&Eier
