@@ -2,8 +2,8 @@ var baseUrl = "";
 
 var request = require('request');
 
-var skipped = -400;
 var limit = 400;
+var skipped = -limit;
 var done = false;
 var count = 0;
 var ddosSafe = 1000;
@@ -21,7 +21,12 @@ function next(error, response, body) {
 
         for (var i = 0; i < body.length; i++) {
             if (body[i].name !== last) {
-                console.log(body[i].name);
+                var categories = "in ";
+                for (var j = 0; j < body[i].categories.length; j++) {
+                    if (j !== 0) categories += ", "
+                    categories += body[i].categories[j].name;
+                }
+                console.log("Fr.", body[i].price_info.price, body[i].name, categories);
                 last = body[i].name;
             }
         }
